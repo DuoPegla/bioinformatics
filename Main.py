@@ -9,21 +9,21 @@ def memory_usage():
 
 print ("INFO: Starting Multiple Sequence Alignment.")
 performance = dict()
-start_time = time.clock()
-input_data = InputData("./input1.txt")
-end_time = time.clock()
+start_time = time.time()
+input_data = InputData("./input.txt")
+end_time = time.time()
 performance["input"] = (end_time - start_time, memory_usage())
 
-start_time = time.clock()
+start_time = time.time()
 hypercube = Hypercube(input_data.sequences)
-end_time = time.clock()
+end_time = time.time()
 performance["hcube"] = (end_time - start_time, memory_usage())
 
 
 msa = MSA(hypercube)
-start_time = time.clock()
+start_time = time.time()
 msa.align()
-end_time = time.clock()
+end_time = time.time()
 performance["MSA"] = (end_time - start_time, memory_usage())
 
 for output in msa.output:
@@ -33,5 +33,5 @@ output_data = OutputData("./output.txt", msa.output)
 
 print ("INFO: Performance: (Execution time [s], Memory usage [MB])")
 for p in performance:
-    print ("\t{0}: {1} s, {2} MB".format(p, performance[p][0], performance[p][1]))
+    print ("\t{0}: \t{1} s, \t{2} MB".format(p, performance[p][0], performance[p][1]))
 print ("INFO: Done.")
