@@ -6,7 +6,7 @@ import time
 print ("INFO: Starting Multiple Sequence Alignment.")
 execution_times = dict()
 start_time = time.clock()
-input_data = InputData(".\input.txt")
+input_data = InputData("./input1.txt")
 end_time = time.clock()
 execution_times["input"] = end_time - start_time
 
@@ -25,7 +25,7 @@ execution_times["MSA"] = end_time - start_time
 for output in msa.output:
     print (output)
 
-output_data = OutputData(".\output.txt", msa.output)
+output_data = OutputData("./output.txt", msa.output)
 
 print ("INFO: Execution time [s]: {0}".format(execution_times))
 print ("INFO: Done.")
