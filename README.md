@@ -1,0 +1,1 @@
+Multiple sequence alignment algorithm written in python for Bioinformatics course.
