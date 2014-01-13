@@ -1,5 +1,2 @@
-CCG-----T-C-T------G-CA-AAA--T---A-GGC--T-CT----
---TAA---TTC-TTAA---GGCG-A----T---A-A----T-C-----
---G-----T-CCT---CCAG-TT-A--C-TG--ACG----G-C-----
---G--GAAT-A-T------G-TT-A---CT-T-A-G----T-T-TG--
---G-----T-C-T------G-CTGA----T--GA-A--CATAC---CC
+CCGT-CTGCAAAATAGGCTCT
+TAATTCTTAAGGCGATAATC-
